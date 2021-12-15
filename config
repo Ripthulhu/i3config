@@ -92,8 +92,8 @@ bindsym Control+$alt+2 exec --no-startup-id ddcutil --mfg SAM setvcp 60 6
 
 # change display brightness in the weirdest way ever (thanks Acer) with ddcutil
 bindsym Control+$alt+6 exec --no-startup-id ddcutil -g SAM setvcp 10 10
-bindsym Control+$alt+7 exec --no-startup-id ddcutil -g ACR setvcp 1A 40 && ddcutil -g ACR setvcp 16 30 && ddcutil -g ACR setvcp 18 33 && dd>
-bindsym Control+$alt+8 exec --no-startup-id ddcutil -g ACR setvcp 1A 100 && ddcutil -g ACR setvcp 16 80 && ddcutil -g ACR setvcp 18 83 && d>
+bindsym Control+$alt+7 exec --no-startup-id ddcutil -g ACR setvcp 1A 40 && ddcutil -g ACR setvcp 16 30 && ddcutil -g ACR setvcp 18 33 && ddcutil -g ACI setvcp 10 10
+bindsym Control+$alt+8 exec --no-startup-id ddcutil -g ACR setvcp 1A 100 && ddcutil -g ACR setvcp 16 80 && ddcutil -g ACR setvcp 18 83 && ddcutil -g SAM setvcp 10 100 && ddcutil -g ACI setvcp 10 100
 
 # start/stop picom (sometimes useful)
 bindsym Control+$alt+9 exec --no-startup-id pkill picom
